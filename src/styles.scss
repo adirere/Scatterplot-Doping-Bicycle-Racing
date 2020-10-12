@@ -1,13 +1,13 @@
-$mint: #00FFB3;
+$mint: rgb(20, 207, 151);
 $pink: #FF004C;
 $green: #CBFF00;
 $blue: #3400FF;
-$babyblue: rgb(0, 171, 214);
+$lightmint:#2BEBB1;
 
 body {
   font-family: sans-serif;
   overflow: visible;
-  background-color: $babyblue;
+  background-color: $mint;
 }
 
 #app {
@@ -64,7 +64,7 @@ stroke-width: .5px;
 
 
 #tooltip {
-  background-color: $blue;
+  background-color: $lightmint;
   display: none;
   font-size: 14px;
   position: absolute;
