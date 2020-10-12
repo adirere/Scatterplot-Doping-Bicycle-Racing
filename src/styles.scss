@@ -1,0 +1,90 @@
+$mint: #00FFB3;
+$pink: #FF004C;
+$green: #CBFF00;
+$blue: #3400FF;
+$babyblue: rgb(0, 171, 214);
+
+body {
+  font-family: sans-serif;
+  overflow: visible;
+  background-color: $babyblue;
+}
+
+#app {
+  text-align: center;
+  margin: 0 auto;
+}
+
+svg {
+  overflow: visible;
+}
+
+.dot{
+stroke:grey;
+stroke-width: .5px;
+}
+
+
+#legend {
+  font-size: 12px;
+  padding: 10px;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  text-align: left;
+  // background-color: $mint;
+  border-radius: 10px;
+  color:white;
+}
+
+#legend  .legend-text {
+  position: relative;
+  padding-right: 25px;
+  margin: 10px;
+  min-width: 160px;
+}
+
+#legend .box {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  top: -3px;
+  right: 0px;
+}
+
+#legend .nodoping {
+  background-color: $green;
+}
+
+#legend .doping {
+  background-color: $pink;
+}
+
+
+#tooltip {
+  background-color: $blue;
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 100;
+  text-align: left;
+  color:white;
+}
+
+#tooltip.show {
+  display: block;
+}
+
+#tooltip p {
+  margin: 5px;
+}
+
+#tooltip small {
+  display: inline-block;
+  margin-top: 10px;
+}
+
